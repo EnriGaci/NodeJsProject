@@ -1,0 +1,2 @@
+Make menu
+Implement UI and backend for selection sort alogrithm
