@@ -1,2 +1,2 @@
 Make menu
-Implement UI and backend for selection sort alogrithm
+Implement UI and back end for selection sort algorithm

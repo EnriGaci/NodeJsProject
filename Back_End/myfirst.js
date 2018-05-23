@@ -1,9 +1,10 @@
 var http = require('http');
 var fs = require('fs');
 var express = require('express');
+var insertionSort = require('./algorithms/Sorting/insertionSort');
 var app = express();
 
-app.use(express.static('./'));
+app.use(express.static('../Front_End'));
 
 // app.use(express.static('libs/angular'));
 // app.use(express.static('libs/angular/jquery'));
@@ -22,7 +23,7 @@ app.use(express.static('./'));
 app.get('/', function (req, res) {
 	// console.log("Got a GET request for the homepage");
 	// res.send('Hello GET');
-	fs.readFile('main.html', function(err, data) {
+	fs.readFile('../Front_End/main.html', function(err, data) {
 		res.writeHead(200, {'Content-Type': 'text/html'});
 		res.write(data);
 		res.end();
